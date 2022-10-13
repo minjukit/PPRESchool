@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/p_background"
+    tools:context=".pmode.PmodeFragment1">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="163dp"
+        android:src="@drawable/kakaoaccount_icon"
+        app:srcCompat="@drawable/ppreschool_logo"
+        tools:srcCompat="@drawable/ppreschool_logo" />
+
+    <TextView
+        android:id="@+id/kakao_account"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="163dp"
+        android:fontFamily="@font/s_core_dream_5_medium"
+        android:text="kakao"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/kakao_logout"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="533dp"
+        android:layout_marginTop="162dp"
+        android:background="@drawable/round_custom_yellow"
+        android:fontFamily="@font/s_core_dream_5_medium"
+        android:text="로그아웃"
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="133dp"
+        android:layout_marginBottom="26dp"
+        android:fontFamily="@font/s_core_dream_5_medium"
+        android:text="회원탈퇴"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/kakao_signout"
+        android:layout_width="102dp"
+        android:layout_height="37dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="127dp"
+        android:layout_marginBottom="27dp"
+        android:background="#00000000" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginBottom="167dp"
+        android:fontFamily="@font/s_core_dream_5_medium"
+        android:text="사운드 설정"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="102dp"
+        android:layout_marginBottom="128dp"
+        android:src="@drawable/music"
+        app:srcCompat="@drawable/music" />
+
+    <SeekBar
+        android:id="@+id/sound_seekbar"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="500dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginBottom="127dp"
+        android:background="#00000000"
+        android:max="100"
+        android:progress="30" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="103dp"
+        android:layout_marginBottom="83dp"
+        android:fontFamily="@font/s_core_dream_5_medium"
+        android:text="네트워크"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/network"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="159dp"
+        android:layout_marginBottom="41dp"
+        android:fontFamily="@font/s_core_dream_5_medium"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/network_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="104dp"
+        android:layout_marginBottom="34dp"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/p_setting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="202dp"
+        android:layout_marginTop="48dp"
+        android:fontFamily="@font/s_core_dream_5_medium"
+        android:text="설정"
+        android:textColor="#000000"
+        android:textSize="44sp" />
+
+    <ImageView
+        android:id="@+id/setting_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/setting" />
+
+</RelativeLayout>

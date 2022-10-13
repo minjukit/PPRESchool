@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF2C4">
+
+    <ImageButton
+        android:id="@+id/pause"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="310dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/pause"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/next"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:src="@drawable/pause" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="60dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="800dp"
+
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="84dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/next"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/next" />
+
+
+    <TextView
+        android:id="@+id/tven"
+        android:layout_width="650dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/s_core_dream_6"
+        android:gravity="center_horizontal"
+        android:textColor="#000000"
+
+
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/tvkr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.533"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511" />
+
+    <TextView
+        android:id="@+id/tvkr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="159dp"
+        android:layout_marginTop="180dp"
+
+
+        android:layout_marginEnd="159dp"
+        android:fontFamily="@font/s_core_dream_6"
+
+        android:gravity="center_horizontal"
+        android:text="한국어 뜻은?"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/goStt"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="564dp"
+        android:layout_marginBottom="92dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/lipimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/ttsbtn"
+        android:layout_width="143dp"
+        android:layout_height="155dp"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="92dp"
+        android:background="@android:color/transparent"
+
+        android:scaleType="fitCenter"
+        android:src="@drawable/speaker"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/goStt"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:src="@drawable/speaker" />
+
+    <ImageButton
+        android:id="@+id/sentencettsbtn"
+        android:layout_width="79dp"
+        android:layout_height="80dp"
+
+        android:layout_marginTop="45dp"
+
+
+        android:layout_marginEnd="10dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/speaker"
+        app:layout_constraintEnd_toStartOf="@+id/tven"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/speaker" />
+
+    <ImageView
+        android:id="@+id/resultimage"
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        android:scaleType="fitCenter"
+        android:visibility="invisible"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/sttgood"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/showspeakresult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:fontFamily="@font/s_core_dream_6"
+        android:text=""
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvkr" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

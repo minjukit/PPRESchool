@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF2C4">
+
+
+    <ImageButton
+        android:id="@+id/mCameraBtn"
+        android:layout_width="185dp"
+        android:layout_height="163dp"
+        android:layout_marginTop="@dimen/level2size"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/camera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/mimageView"
+        android:layout_width="375dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="@dimen/myCamDp"
+        android:rotation="90"
+        android:rotationX="0"
+        android:rotationY="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mCameraBtn"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/percentText"
+        android:layout_width="@dimen/myCamDp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/s_core_dream_6"
+        android:textAlignment="textEnd"
+        app:layout_constraintBottom_toTopOf="@+id/studybtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/processText" />
+
+    <TextView
+        android:id="@+id/processText"
+        android:layout_width="400dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:fontFamily="@font/s_core_dream_6"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mimageView" />
+
+    <ImageButton
+        android:id="@+id/studybtn"
+        android:layout_width="172dp"
+        android:layout_height="114dp"
+        android:layout_marginBottom="@dimen/level2size"
+        android:background="@android:color/transparent"
+        android:visibility="invisible"
+        android:onClick="requestfreeDicApi"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ok"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

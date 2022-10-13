@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:name="http://schemas.android.com/tools">
+
+    <group>
+        <item
+            android:id="@+id/menu_1"
+            android:icon="@drawable/win_mouse"
+            android:title="학습하기"
+            android:checked="true"
+            app:itemTextColor="#FFFFFF" />
+
+        <item
+            android:id="@+id/menu_2"
+            android:icon="@drawable/win_rabbit"
+            android:title="복습하기"
+            android:checked="true"
+            app:itemTextColor="#FFFFFF" />
+
+
+        <item
+            android:id="@+id/menu_3"
+            android:icon="@drawable/win_bear"
+            android:title="시험보기"
+            android:checked="true"
+            app:itemTextColor="#FFFFFF" />
+
+        <item
+            android:id="@+id/menu_4"
+            android:icon="@drawable/p_btn"
+            android:title="부모모드"
+            android:checked="true"
+            app:itemTextColor="#FFFFFF" />
+
+
+
+    </group>
+
+
+</menu>
