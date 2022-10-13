@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ppre_main_page"
+    tools:context=".kakaologin.kakao_main">
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/SignIn_Button"
+        android:layout_width="310dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_custom_login">
+
+    </com.google.android.gms.common.SignInButton>
+
+    <Button
+        android:id="@+id/btn_custom_login"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/kakao_login_medium_wide"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.396" />
+
+    <Button
+        android:id="@+id/ppre_login"
+        android:layout_width="300dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="23dp"
+        android:background="#FFFFFF"
+        android:fontFamily="@font/s_core_dream_6"
+        android:text="이메일 로그인"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignIn_Button" />
+
+    <EditText
+        android:id="@+id/ppre_signup_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="205dp"
+        android:ems="7"
+        android:fontFamily="@font/s_core_dream_5_medium"
+        android:hint="이메일 회원가입"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.569"
+        app:layout_constraintStart_toEndOf="@+id/btn_custom_login" />
+
+    <Button
+        android:id="@+id/ppre_signup"
+        android:layout_width="@dimen/twoH"
+        android:layout_height="@dimen/level2size"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="205dp"
+        android:background="#00000000"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_custom_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

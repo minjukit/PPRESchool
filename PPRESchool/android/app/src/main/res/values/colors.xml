@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="tfe_color_primary">#ffa800</color>
+    <color name="tfe_color_primary_dark">#ff6f00</color>
+    <color name="tfe_color_accent">#425066</color>
+    <color name="black">#000000</color>
+    <color name="pen">#2e2e2e</color>
+    <color name="ppreBeige">#FFF2C4</color>
+    <color name="ppreGreen">#A3F266</color>
+    <color name="ppreOrange">#FFC000</color>
+    <color name="pprePink"> #FF80F7</color>
+    <color name="ppreYellow">#FFEE05</color>
+    <color name="ppreSky">#6FEEFC</color>
+    <color name="tfe_semi_transparent">#66000000</color>
+</resources>

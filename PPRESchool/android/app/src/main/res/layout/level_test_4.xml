@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF2C4"
+    android:clickable="true">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="452dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="286dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="286dp"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@android:drawable/progress_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/listen"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="232dp"
+        android:background="@drawable/music_therapy"
+        android:clickable="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar" />
+
+    <Button
+        android:id="@+id/chicken_button"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/chicken"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/elephant_button"
+        app:layout_constraintStart_toEndOf="@+id/bear_button" />
+
+    <Button
+        android:id="@+id/bear_button"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="144dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/bear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/chicken_button"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/elephant_button"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/elephant"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/chicken_button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

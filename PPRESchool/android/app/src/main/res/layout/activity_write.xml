@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF2C4"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".WriteActivity">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/enTextview"
+                android:layout_width="925dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/s_core_dream_6"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="50sp" />
+
+            <ImageButton
+                android:id="@+id/pause"
+                android:layout_width="139dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:visibility="visible"
+                app:srcCompat="@drawable/pause" />
+
+        </LinearLayout>
+
+        <org.tensorflow.lite.examples.classification.DrawingView
+            android:id="@+id/drawing_view"
+            android:layout_width="match_parent"
+            android:layout_height="290dp"
+            android:background="#80FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/recognize_button"
+                android:layout_width="465dp"
+                android:layout_height="110dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="recognizeClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ok" />
+
+            <ImageButton
+                android:id="@+id/clear_button"
+                android:layout_width="376dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="clearClick"
+                android:scaleType="fitCenter"
+                android:src="@drawable/eraser" />
+
+            <ImageButton
+                android:id="@+id/next"
+                android:layout_width="44dp"
+                android:layout_height="64dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:scaleType="fitCenter"
+                android:visibility="invisible"
+                app:srcCompat="@drawable/next" />
+
+
+        </LinearLayout>
+
+        <org.tensorflow.lite.examples.classification.StatusTextView
+            android:id="@+id/status_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textIsSelectable="true"
+            android:textSize="0sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/write_result"
+        android:layout_width="600dp"
+        android:layout_height="300dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+        tools:srcCompat="@drawable/sttgood" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

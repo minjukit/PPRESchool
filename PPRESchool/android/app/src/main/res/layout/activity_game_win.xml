@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gamewinbg"
+    tools:context=".game.GameWinActivity">
+
+    <Button
+        android:id="@+id/stopBtn"
+        android:layout_width="270dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/round_custom_yellow"
+        android:fontFamily="@font/s_core_dream_6"
+        android:text="@string/stopkr"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
